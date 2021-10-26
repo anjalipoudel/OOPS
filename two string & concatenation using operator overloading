@@ -5,7 +5,7 @@
  class AddString 
  {
  public:
-    char s1[25], s2[25];
+    char s1[30], s2[30];
     AddString(char str1[], char str2[])
     {
         strcpy(this->s1, str1);
@@ -18,8 +18,8 @@
 };
 int main()
 {
-    char str1[] = "hello";
-    char str2[] = "world";
+    char str1[] = "Today is a good day";
+    char str2[] = "Happy contribution";
     AddString a1(str1, str2);
     +a1;
     return 0;
