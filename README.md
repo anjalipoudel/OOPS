@@ -1,5 +1,5 @@
 # c++
-// Your First C++ Program
+// My First C++ Program
 
 #include <iostream>
 
