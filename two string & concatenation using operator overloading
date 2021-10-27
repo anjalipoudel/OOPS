@@ -5,21 +5,21 @@
  class AddString 
  {
  public:
-    char s1[30], s2[30];
+    char A[20], B[15];
     AddString(char str1[], char str2[])
     {
-        strcpy(this->s1, str1);
-        strcpy(this->s2, str2);
+        strcpy(this->A, str1);
+        strcpy(this->B, str2);
     }
     void operator+()
     {
-        cout << "\nConcatenation: " << strcat(s1, s2);
+        cout << "\nConcatenation: " << strcat(A, B);
     }
 };
 int main()
 {
-    char str1[] = "Today is a good day";
-    char str2[] = "Happy contribution";
+    char str1[] = "I Purple You";
+    char str2[] = "Purple Galaxy";
     AddString a1(str1, str2);
     +a1;
     return 0;
