@@ -2,12 +2,12 @@
 using namespace std;  
 int main()  
 {  
-   int i,fact=1,number;    
-  cout<<"Enter any Number: ";    
- cin>>number;    
-  for(i=1;i<=number;i++){    
+   int i,fact=1,num;    
+  cout<<"Enter any positive Number: ";    
+ cin>>num;    
+  for(i=1;i<=num;i++){    
       fact=fact*i;    
   }    
-  cout<<"Factorial of " <<number<<" is: "<<fact<<endl;  
+  cout<<"Factorial of " <<num<<" is: "<<fact<<endl;  
   return 0;  
 }  
