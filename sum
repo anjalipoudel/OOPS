@@ -1,37 +1,37 @@
 #include<iostream>
 #include<conio.h>
 using namespace std;
-class add 
+class substract 
 {
-   int c;
+   float z;
 public:
 
-   add() 
+   substract() 
    {
-       cout << "Sum is:";
+       cout << "difference  is:";
    }
 
-   add(int a, int b) 
+   substract(float a, float b) 
    {
-       c = a + b;
+       z = a + b;
    }
 
    void display() 
    {
-       cout << c;
+       cout << z;
    }
 };
 
 int main()
  {
 
-   int a, b;
+   float a, b;
 
    cout << "Enter two numbers:";
    cin >> a>>b;
 
-   add t;
-   add tt(a, b);
+   substract t;
+   substract tt(a, b);
    tt.display();
    getch();
    return 0;
