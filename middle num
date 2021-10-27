@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int middleNumber(int,int,int);
+int main()
+{
+    int a,b,c;
+    cout<<"Enter the three numbers\n";
+    cin>>a>>b>>c;
+    cout<<"Middle number is " <<middleNumber(a,b,c);
+    getch();
+    return 0;
+}
+int middleNumber(int a,int b,int c){
+    int middle=0;
+    if(a>b){
+        if(b>c){
+        middle=b;
+    }
+    else if(c>a){
+        middle=a;
+    }
+    else{
+        middle=c;
+    }
+    }
+    else{
+        if(b<c){
+        middle=b;
+    }
+    else if(c<a){
+        middle=a;
+    }
+    else{
+        middle=c;
+    }
+}
+}
