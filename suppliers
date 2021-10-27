@@ -1,0 +1,54 @@
+#include<iostream>
+       #include<conio.h>
+       using namespace std;
+       class suppliers
+       {
+              int eId;
+              char Name[25];
+             char address[20];
+
+              public:
+              void GetData()          
+              {
+                    cout<<"\n\tEnter suppliers  Id : ";
+                    cin>>eId;
+
+                    cout<<"\n\tEnter suppliers Name : ";
+                    cin>>Name;
+
+                    cout<<"\n\tEnter suppliers address : ";
+                    cin>>address;
+
+                 
+              }
+
+              void PutData()          
+              {
+                    cout<<"\n"<<eId<<"\t"<<Name<<"\t"<<address;
+              }
+
+       };
+
+
+       int main()
+       {
+
+              int i;
+
+              suppliers E[2];          
+
+              for(i=0;i<2;i++)
+              {
+                    cout<<"\nEnter details of "<<i+1<<"suppliers ";
+                    E[i].GetData();
+              }
+
+{
+
+              cout<<"\n Details of suppliers";
+              for(i=0;i<2;i++)
+              E[i].PutData();
+          }
+getch();
+return 0;
+       }
